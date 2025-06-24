@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="container mt-5">
+    <div class="p-4 mb-4 bg-primary text-white text-center rounded">
+        <h4>LFPEvent Main</h4>
+    </div>
+
+    <div class="text-center p-5 bg-light rounded">
+        <h2>Welcome to LFPEvents!</h2>
+        <p>Plan smart. Book fast. Celebrate with us.</p>
+
+        <div class="btn-group mt-3">
+            @Html.ActionLink("Venues", "Index", "Venues", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Events", "Index", "Events", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Bookings", "Index", "Bookings", null, new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="LFPDataBContext-Web.config Connection String" description="LFPDataBContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:lfpevents.database.windows.net,1433;Initial Catalog=LFPDB;Persist Security Info=False;User ID=Mojahi;Password=KulasLFP@018;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\lab_services_student\\Desktop\\CLDV6211POElfp\\LFPEvents\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LFPDataBContext']/@connectionString" />
+  </parameter>
+  <parameter name="LFPDataBContext1-Web.config Connection String" description="LFPDataBContext1 Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:lfpevents.database.windows.net,1433;Initial Catalog=LFPDB;Persist Security Info=False;User ID=Mojahi;Password=KulasLFP@018;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\lab_services_student\\Desktop\\CLDV6211POElfp\\LFPEvents\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LFPDataBContext1']/@connectionString" />
+  </parameter>
+</parameters>

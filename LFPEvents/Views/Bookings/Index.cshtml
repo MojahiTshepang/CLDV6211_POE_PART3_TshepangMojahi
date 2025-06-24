@@ -1,0 +1,43 @@
+﻿@model IEnumerable<LFPEvents.Models.ViewModels.BookingViewModel>
+@using System.Web.Mvc
+
+@{
+    ViewBag.Title = "Bookings";
+}
+
+<h2>Bookings</h2>
+
+<p>
+    @Html.ActionLink("Create New Booking", "Create", "Bookings", null, new { @class = "btn btn-success" })
+</p>
+
+<form method="get">
+    <input name="search" value="@Request.QueryString["search"]" placeholder="Search by ID or event title" class="form-control" />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Event</th>
+            <th>Venue</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model)
+        {
+            <tr>
+                <td>@b.BookingID</td>
+                <td>@b.CustomerName</td>
+                <td>@b.EventTitle</td>
+                <td>@b.VenueName</td>
+                <td>@b.BookingDate.ToShortDateString()</td>
+                <td>@Html.ActionLink("Details", "Details", new { id = b.BookingID })</td>
+            </tr>
+        }
+    </tbody>
+</table>
